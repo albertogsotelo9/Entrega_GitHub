@@ -1,0 +1,73 @@
+/*BEM*/
+@import  "./scss/bootstrap";
+
+$azul: navy;
+
+.nav{
+    background-color: $azul;
+
+}
+
+.main{
+    background-color: aqua;
+
+}
+
+.tabla{
+    background-color: rgb(98, 197, 68);
+}
+
+.header{
+    background-color: $azul;
+}
+
+.fotos{
+    background-color: whitesmoke;
+
+}
+
+.caja{
+    background-color: rgb(0, 255, 149);
+}
+
+.caja__detalle{
+    border: solid;
+    width: 500px;
+    height: 200px;
+}
+/*****************************
+EACH - LISTAS
+
+**************************************/
+@each $fotos_N in IMG_0259, IMG_0442, IMG_1146, IMG_4792, IMG_4813, neo, neotraditional, ship{
+    .#{$fotos_N}-icon {
+        background-image: url('../../Pictures/neotraditional/#{$fotos_N}.JPG');
+    }
+} 
+
+/**************************
+
+MAPS
+
+*****************************/
+
+$colores:(
+
+    Foto_1: #55acee,
+    Foto_2: rgb(51, 121, 63),
+    Foto_3:rgb(100, 100, 12),
+    Foto_4: red,
+    Foto_5: rgb(245, 190, 89),
+    Foto_6: rgb(81, 255, 0),
+    Foto_7: rgba(154, 172, 155, 0),
+    Foto_8:  gray
+);
+
+@each $clave, $color in $colores {
+    .foto-#{$clave} {
+        border: $color;
+    }
+}
+
+
+

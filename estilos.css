@@ -1,0 +1,550 @@
+
+*{
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./Pictures/tinta.png");
+}
+
+.googlefont{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h1Header{
+    font-size: 40px;
+}
+
+
+
+.Lista{
+    background-color: darkslategray;
+}
+
+
+
+.negrita{
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration-color: black;  
+    text-shadow: black;
+    background-color: greenyellow;
+    width: 100%;
+    height: 20px;
+}
+
+
+
+.interlineado{
+    line-height: 1.5;
+}
+
+
+.imagen{
+    width: 40%;
+    margin: auto;
+    background-color: lightgrey;
+    
+}
+
+.navFont{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+.nav_frame{
+    border: none;
+}
+
+
+
+/* Flexbox */
+
+
+
+.main-contacto{
+    background-color: white;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    
+}
+
+
+.grid-areas{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "machine machine machine"
+    "imgs_1 imgs_2 imgs_3"
+    "tabla tabla tabla"
+    "footer footer footer"
+    ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+
+header{
+    grid-area: header;
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: hsla(210, 29%, 29%,1);
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-areas: 
+    "nav h1 h2"
+    ;
+    grid-template-columns: 1fr 1fr;
+}
+#h2main{
+    grid-area: h2;
+}
+#h1Header{
+    grid-area: h1;
+}
+#video{
+    grid-area: vi;
+    width: 100%;
+}
+.video_s{
+    justify-self: center;
+    width: 50%;
+    height: 20%;
+}
+.h3main{
+    font-size: small;
+    text-align: center;
+}
+
+main{
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    display: grid;
+    grid-template-areas: 
+    "vi carro"
+    ;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+}
+#video{
+    grid-area: vi;
+    width: 60%;
+}
+#machine{
+    grid-area: machine;
+}
+#imgs_1{
+    grid-area: imgs_1;
+    justify-items: center;
+}
+#imgs_2{
+    grid-area: imgs_2;
+    justify-items: center;
+}
+#imgs_3{
+    grid-area: imgs_3;
+    justify-items: center;
+    align-items: center ;
+}
+.imgMach_main{
+    width: 55%;
+}
+.fontana_ti{
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration-color: black;  
+    text-shadow: black;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    
+}    
+.fontana{
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration-color: black;  
+    text-shadow: black;
+    width: 100%;
+    height: 20px;
+
+}    
+
+.carro{
+    grid-area: carro;
+    width: 58%;
+    position: relative;
+    z-index: 2;
+}
+
+#NAV{
+    grid-area: nav;
+    justify-self: start;
+}
+
+#tabla{
+    grid-area: tabla;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(187, 243, 124);
+}
+.titulosTabla{
+    list-style-type: none;
+    font-size: small;
+    font-weight: bold;
+}
+.titulosTabla2{
+    list-style-type: none;
+    font-size: smaller;
+    font-weight: normal;
+}
+footer{
+    grid-area: footer;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    header{
+        background-color: black;
+        width: 100%;
+        height: auto;
+        color: white;
+        justify-items: center;
+        align-items: center;
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+        "nav h1 h2"
+        ;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+    /* Flexbox */
+    
+    
+    main{
+        background-color: white;
+        grid-area: main;
+        height: 80%;
+        width: 65%;
+        
+       
+    }
+
+    .grid-areas{
+        display: grid;
+        grid-template-areas:
+        "header header header" 
+        "vi main main"
+        "vi main main"
+        "tabla tabla tabla"
+        "footer footer footer"
+        
+        ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        margin: 0;
+    
+    }
+    
+    #NAV{
+        grid-area: nav;
+        justify-self: start;
+    }
+    #video{
+        grid-area: vi;
+    }
+    .video_s{
+        justify-self: center;
+        height: 85%;
+        width: 100%;
+    }
+        
+    #tabla{
+        grid-area: tabla;
+        font-family: 'Poppins', sans-serif;
+    }
+    .titulosTabla{
+        list-style-type: none;
+        font-size: larger;
+        font-weight: bold;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    
+    .grid-areas{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        ". . ." 
+        "machines machines machines"
+        ". . ."
+        "gotas gotas gotas"
+        "ti_svg ti_svg ti_svg"
+        "picT picT picT"
+        "tabla tabla tabla"
+        "footer footer footer"
+        ;
+        grid-template-rows: 1fr 1fr 150px 1fr 150px 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 15px;
+        margin: 0;
+        padding: 0;
+        justify-content: stretch;
+        align-content: stretch;
+    }
+
+    #h1Header{
+        grid-area: h1;
+    }
+
+    #h2main{
+        grid-area: h2;
+        color: black;
+    }
+
+  
+   
+  
+    .h3main{
+        display: flex;
+        font-size: large;
+        justify-self: center;
+        align-self: center;
+    }
+   
+ 
+
+    header{
+        grid-area: header;
+        width: 100%;
+        height: auto;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        grid-template-areas: 
+        "nav h1 h2"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main{
+        grid-area: main;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+        display: grid;
+        grid-template-areas: 
+        "vi carro"
+        ;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+    }
+  
+    #video{
+        grid-area: vi;
+        width: 60%;
+    }
+    #machines{
+        grid-area: machines;
+        display: grid;
+        grid-template-areas:
+        "title_mach title_mach title_mach" 
+        "ti_1 ti_2 ti_3"
+        "imgs_1 imgs_2 imgs_3"
+        ;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        justify-content: stretch;
+        align-content: stretch;
+        margin: 0;
+        padding: 0;
+    }
+    #gotas{
+        grid-area: gotas;
+    }
+    #ti_svg{
+        grid-area: ti_svg;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        color: black;
+        background-color: greenyellow;
+    }
+    #picTest{
+        grid-area: picT;
+        background-color: whitesmoke;        
+    }
+    .picT{
+        width: 40%;
+        height: 40%;
+    }
+
+    .p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+    }
+    #title_mach{
+        grid-area: title_mach;
+        background-color: whitesmoke;
+        height: 50px;
+    }
+    #ti_1{
+        grid-area: ti_1;
+        justify-self: center;
+        background-color: whitesmoke;
+        opacity: 1;
+        height: 40px;
+    }
+    #ti_2{
+        grid-area: ti_2;
+        justify-self: center;
+        background-color: whitesmoke;
+        opacity: 1;
+        height: 40px;
+    }
+    #ti_3{
+        grid-area: ti_3;
+        justify-self: center;
+        background-color: whitesmoke;
+        opacity: 1;
+        height: 40px;
+    }
+    #imgs_1{
+        grid-area: imgs_1;
+        background-color: transparent;
+    }
+    #imgs_2{
+        grid-area: imgs_2;
+        background-color: transparent;
+    }
+    #imgs_3{
+        grid-area: imgs_3;
+        background-color: transparent;
+    }
+    .imgMach_main{
+        height: 80%;
+    }
+    .fontana_ti{
+        font-weight: bold;
+        font-size: 40px;
+        text-decoration-color: black;  
+        text-shadow: black;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        left: -50px;
+        
+    }    
+    .fontana{
+        font-weight: bold;
+        font-size: 30px;
+        text-decoration-color: black;  
+        text-shadow: black;
+        width: 100%;
+        height: 20px;
+
+    }    
+  
+    .carro{
+        grid-area: carro;
+        width: 53.5%;
+    }
+  
+   
+    #NAV{
+        grid-area: nav;
+        width: 30%;
+        height: 85%;
+        border-radius: 20px;
+        justify-items: start;
+        align-items: start;
+
+    }
+   
+
+    #tabla{
+        grid-area: tabla;
+        font-family: 'Poppins', sans-serif;
+    }
+    .titulosTabla{
+        list-style-type: none;
+        font-size: larger;
+        font-weight: bold;
+    }
+    footer{
+        grid-area: footer;
+    }
+    
+        
+}
+
+
+.mover{
+    transform: translate left (400px);
+}
+
+.trans{
+    transition: all 2s;
+}
+.trans:hover{
+    width: 100%;
+    height: 600px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    
+}
+
+
+
+
+.TittleFont{
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: rgb(228, 226, 226);
+    text-decoration: none;
+    
+}     
+
+
+
+
+
+
+
+
+
+
