@@ -310,10 +310,12 @@ footer{
         "gotas gotas gotas"
         "ti_svg ti_svg ti_svg"
         "picT picT picT"
+        ". . ."
+        "last last last"
         "tabla tabla tabla"
         "footer footer footer"
         ;
-        grid-template-rows: 1fr 1fr 150px 1fr 150px 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 150px 1fr 150px 1fr 1fr 1fr 150px 100px 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-row-gap: 10px;
         grid-column-gap: 15px;
@@ -331,9 +333,13 @@ footer{
         grid-area: h2;
         color: black;
     }
-
-  
-   
+    #last{
+        grid-area: last;
+        font-size: 30vw;
+        color: #01fe87;
+        -webkit-text-stroke: 0.2vw;
+        text-transform: uppercase;
+    }
   
     .h3main{
         display: flex;
