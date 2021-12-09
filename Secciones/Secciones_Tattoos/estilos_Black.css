@@ -95,7 +95,7 @@ h1 span:nth-child(12){
     
 }
 
-.flex-areas{
+.grid-areas{
     display: grid;
     grid-template-areas: 
     "header header header"
@@ -103,7 +103,7 @@ h1 span:nth-child(12){
     "main main main"
     "footer footer footer";
     grid-template-columns: 20% auto 15%;
-    grid-template-rows: 150px 1fr 1fr 75px;
+    grid-template-rows: 150px 1fr 1fr 1fr;
     grid-row-gap: 20px;
     margin: 0;
     height: 100vh;
@@ -118,7 +118,7 @@ header{
     height: 85%;
     border-radius: 20px;
     justify-items: start;
-    align-items: start;
+    z-index: 1;
 }
 .navFont{
     font-family: 'Poppins', sans-serif;
