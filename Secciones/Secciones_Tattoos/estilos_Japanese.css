@@ -69,8 +69,13 @@ header{
 #h1Header{
     grid-area: h1Header;
     position: absolute;
-    top: 15px;
+    top: 3px;
     left: 650px;
+    font-family: 'Trade Winds', cursive;
+}
+.font{
+    font-family: 'Shalimar', cursive;
+    font-size: 80px;
 }
 .navFont{
     font-family: 'Poppins', sans-serif;

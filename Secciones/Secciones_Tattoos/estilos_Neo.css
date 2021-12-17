@@ -63,6 +63,9 @@ header{
     border-radius: 20px;
     z-index: 1;    
 }
+#h1Header{
+    grid-area: h1Header;
+}
 
 h1{
     grid-area: h1Header;
@@ -70,9 +73,9 @@ h1{
     color: #252839;
     -webkit-text-stroke: 0 #383d52;
     text-transform: uppercase;
-    top: 15px;
-    left: 650px;
-    font-size: 20vw;
+    top: 19px;
+    left: 500px;
+    font-size: 50px;
 }
 h1::before{
     content: attr(data-text);
