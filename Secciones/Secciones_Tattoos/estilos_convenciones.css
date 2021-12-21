@@ -12,7 +12,7 @@ body{
     padding: 0;
     height: 100vh;
     width: 100%;
-    background-image: url("");
+    background-image: url("../../Pictures/luqui.jpg");
     
 }
 
@@ -72,7 +72,6 @@ header{
 
 #h1Header{
     grid-area: h1Header;
-    
     top: 3px;
     left: 650px;
     font-family: 'Trade Winds', cursive;
@@ -187,7 +186,7 @@ footer{
 
     #h1Header{
         grid-area: h1Header;
-        position: absolute;
+        
         top: 3px;
         left: 650px;
         font-family: 'Trade Winds', cursive;
@@ -211,26 +210,7 @@ footer{
     main{
         grid-area: main;
     }
-    .contenedor_imagenes{
-        display: flex;
-        width: 85%;
-        margin: auto;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        border-radius: 3px;
-    }
-    .caja_imagen{
-        width: 32%;
-        position: relative;
-        height: 250px;
-        margin-bottom: 5px;
-        box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
-    }
-    .imagen{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    
     footer{
         grid-area: footer;
         justify-self: center;
