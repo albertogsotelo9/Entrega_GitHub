@@ -19,7 +19,7 @@ body{
 header{
 
     width: 100%;
-   
+
 }
 
 
@@ -65,17 +65,21 @@ header{
     border-radius: 20px;
     z-index: 1;    
 }
+.maq{
+    width:50px;
+    height:50px;
+}
 
 #h1Header{
     grid-area: h1Header;
-    position: absolute;
+    
     top: 3px;
     left: 650px;
     font-family: 'Trade Winds', cursive;
 }
 .font{
     font-family: 'Shalimar', cursive;
-    font-size: 80px;
+    font-size: 60px;
 }
 .navFont{
     font-family: 'Poppins', sans-serif;
@@ -84,6 +88,7 @@ header{
     text-transform: uppercase;
     color: black;
     text-decoration: none;
+    font-size:10px;
 }
 .nav_frame{
     border: none;
@@ -114,4 +119,120 @@ main{
 footer{
     grid-area: footer;
     justify-self: center;
+    
+}
+
+
+/******************************************************************************************/
+
+
+
+/******************************************************************************************/
+
+
+@media only screen and (min-width: 1025px){
+    header{
+
+        width: 100%;
+    
+    }
+
+
+    h1{
+        
+        text-align: center;
+        color: black;
+        font-size: 5em;
+        font-family: sans-serif;
+        letter-spacing: 0.2em;
+        
+        
+    }
+
+
+    .grid-areas{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        ". . ."
+        "main main main"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 150px 1fr 1fr;
+        grid-row-gap: 30px;
+        margin: 0;
+        height: 100vh;
+    }    
+
+    header{
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+        "nav h1Header h1Header"
+        ;
+        background-color: rgb(248, 226, 229);
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #NAV{
+        grid-area: nav;
+        width: 20%;
+        height: 85%;
+        border-radius: 20px;
+        z-index: 1;    
+    }
+    .maq{
+        width:80px;
+        height:74px;
+    }
+
+    #h1Header{
+        grid-area: h1Header;
+        position: absolute;
+        top: 3px;
+        left: 650px;
+        font-family: 'Trade Winds', cursive;
+    }
+    .font{
+        font-family: 'Shalimar', cursive;
+        font-size: 80px;
+    }
+    .navFont{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        list-style-type: none;
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none;
+        font-size:20px;
+    }
+    .nav_frame{
+        border: none;
+    }
+    main{
+        grid-area: main;
+    }
+    .contenedor_imagenes{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 3px;
+    }
+    .caja_imagen{
+        width: 32%;
+        position: relative;
+        height: 250px;
+        margin-bottom: 5px;
+        box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
+    }
+    .imagen{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    footer{
+        grid-area: footer;
+        justify-self: center;
+    }
 }
